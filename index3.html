@@ -7,8 +7,9 @@
 
     </title>
     <style>
-        #bt1,#bt2{
-        display:none;
+     
+        .btn1,.btn2,.btn3,.btn4{
+            display: none;
         }
     </style>
 </head>
@@ -34,8 +35,11 @@
             <h3 class="types">normal Pizza</h3>
             <p class="l">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <button class="btn" id="bta1" onclick="fun(this)">Add to Cart</button>
-            <input class="btn1" id="bt1" type="number" value="1" min="1" data-price-id="price1" result-id="result1">
-           
+            <button class="btn1"   data-price-id="price1" result-id="result1" span-id-ra="bt1">
+           <span id="bt1"  class="valob1">1</span></button>
+           <button class="btn2"  id="inc1" span-id-ra="bt1" id-to-sho="dec1" id-to-mi="del1" onclick="increm(this)">+</button>
+                <button class="btn3" id="dec1" span-id-ra="bt1" id-to-sho="del1"onclick="decrem(this)">-</button>
+                <button class="btn4"  id="del1"span-id-ra="bt1"  onclick="delnode(this)">del</button>
           
             <input id="price1" value="100"  style="display: none;" disabled >
             <p id="result1" class="resulte"> &#8377 100</p>
@@ -48,9 +52,14 @@
             <button class="btn" id="bta2" onclick="fun(this)">Add to Cart</button>
           
             <!--  -->
-     
-            <input class="btn1" id="bt2" type="number" value="1" min="1" data-price-id="price2"  result-id="result2">
-
+            
+            <button class="btn1"  data-price-id="price2"  result-id="result2" span-id-ra="bt2"> <span id="bt2" class="valob1">1</span>  </button>
+                <!-- type="number" value="1" min="1" -->
+                <!-- let currentValue = 0;
+                valueElement.textContent = currentValue; -->
+                <button class="btn2" id="inc2" span-id-ra="bt2"  id-to-sho="dec2" id-to-mi="del2" onclick="increm(this)">+</button>
+                <button class="btn3"  id="dec2"span-id-ra="bt2"  id-to-sho="del2"  onclick="decrem(this)">-</button>
+                <button class="btn4"  id="del2"span-id-ra="bt2" id-to-sho="dec2" onclick="delnode(this)">Del</button>
             <input id="price2" value="1500"   style="display: none;" disabled >
             <p  id="result2" class="resulte" > &#8377 1500</p>
         </div>
